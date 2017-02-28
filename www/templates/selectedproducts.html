@@ -1,0 +1,144 @@
+<ion-view view-title="Register Sales" class="pane">
+ <ion-content class="content"> 
+ <p>Register Sales</p>
+	     <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+	    <div class="tabs">
+	      <a class="tab-item active" href="#/app/registersales">	        
+	        Registser Sales
+	      </a>
+	      <a class="tab-item" href="#/app/selectedproduct">
+	       Selected Product 	        
+	      </a>
+	      <a class="tab-item" href="#/app/manualsale">	        
+	        Manual Sale	        
+	      </a>
+	    </div>
+	  </div>
+	  <div class="Tacos">
+	   <div class="item item-icon-left item-icon-right">
+	      <button class="button button-icon"><i class="icon ion-arrow-left-b"></i>
+	        </button>  
+	         Tacos
+	      <button class="button button-icon"><i class="icon ion-arrow-right-b"></i>
+           </button>
+       </div>
+      </div>
+
+      
+
+      <div class="range-filter">    
+		    <div class="left-side-div">
+		       <span style="text-align:left;"><h4>Stapler</h4></span>
+		       <div class="item range">
+		          <i class="icon ion-ios7-sunny-outline"></i>
+		          <input type="range" name="volume" min="0" max="10" value="{{rangeValue}}" ng-model="rangeValue">
+		          <i class="icon ion-ios7-sunny-outline"></i>
+		       </div>
+		    </div>
+		    <div class="right-side-div">
+		    <span><h4>Quantity</h4></span>
+			    <div class="quantity" name="quantity">
+			    <span style="padding: 10px;">X</span>
+			    {{rangeValue}}</div>
+		    </div>
+    
+      </div> 
+      <div class="range-filter">    
+		    <div class="left-side-div">
+		       <span style="text-align:left;"><h4>Stapler</h4></span>
+		       <div class="item range">
+		          <i class="icon ion-ios7-sunny-outline"></i>
+		          <input type="range" name="volume" min="0" max="10" value="{{rangeValue}}" ng-model="rangeValue">
+		          <i class="icon ion-ios7-sunny-outline"></i>
+		       </div>
+		    </div>
+		    <div class="right-side-div">
+		    <span><h4>Quantity</h4></span>
+			    <div class="quantity" name="quantity">
+			    <span style="padding: 10px;">X</span>
+			    {{rangeValue}}</div>
+		    </div>
+    
+      </div>     
+ 
+    <div class="btn-botton">    
+		    <div class="left-div">
+		      <button class="button button-block">
+				   Back
+		 	  </button>
+		    </div>
+		    <div class="right-div">
+			    <button class="button button-block">
+				   View Tickets
+				</button>
+		    </div>    
+    </div>
+ </ion-content>
+</ion-view>
+
+<style type="text/css">
+	p{
+	font-size: 34px; 
+	font-family: "Comic Sans MS";
+	margin: 26px 0 10px
+    } 
+    h4{
+    	color:#fff;
+    }
+    .Tacos {
+       float: left;
+       width: 100%;
+       margin-top: 70px;
+    }
+    .Product-image{
+     float: left;
+     width: 100%;
+    }
+    .range-filter{
+    float: left;
+    width: 100%;         
+    }
+    .right-side-div{
+    float: right;
+    width: 30%;
+    padding: 10px;
+	}
+	.left-side-div{
+    float: left;
+    width: 70%;
+    padding: 10px;
+
+	}
+	.btn-botton{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-top:10px; 
+    }
+    .right-div{
+    float: right;
+    width: 50%;
+    padding: 10px;
+	}
+
+	.left-div{
+    float: left;
+    width: 50%;
+    padding: 10px;
+	}
+	.button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+   .range{
+   	 background:transparent; 
+   }
+   .quantity span {
+    display: inline-block;
+    margin-top: 5px;
+   }
+</style>

@@ -1,0 +1,104 @@
+<ion-view view-title="New Member" class="pane">
+  <ion-content class="content member">
+     New Member
+     <form  name="ionic" class="form-class" novalidate form-manager> 
+      <div class="list list-inset" id="name_input">
+         <div class="input_name">        
+           <input type="text" name="name" ng-model="member.name">                  
+         </div>
+      </div>             
+      <div class="list list-inset" id="gender_input">
+         <div class="input_gender">        
+          <input type="radio" name="gender" ng-model="member.gender" value="Male">M
+          <input type="radio" name="gender" ng-model="member.gender" value="Female">F        
+         </div>
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input">
+         <select name=relation ng-model="member.relation">
+             <option value ="">Relatedness</option>
+             <option value="Uncle">Uncle</option>
+             <option value="Father">Father</option>
+             <option value="Cousin">Cousin</option>
+             <option value="Brother">Brother</option>
+             <option value="Aunt">Aunt</option>
+             <option value="Mom">Mom</option>
+             <option value="Cousin">Cousin</option>
+             <option value="Sister">Sister</option>
+         </select>
+        </label>
+      </div>
+      <div class="back-button">    
+          <div class="left-button">
+            <button class="button button-block" ng-click="back()">
+             Back
+            </button>
+          </div>
+          <div class="right-button">
+            <button class="button button-block" ng-click="addMember()">
+             Done
+            </button>
+          </div>      
+      </div>	          
+    </form>     
+  </ion-content>
+</ion-view>
+<style type="text/css">
+	  
+    .content.member {
+     color: white;
+     font-family: "Comic Sans MS";
+     font-size: 33px;
+     margin-top: 40px;
+     text-align: center;
+     top: 40px;
+    }
+    .list .item select {
+     background: #fff none repeat scroll 0 0;
+     border: medium none;
+     font-size: 100%;
+     padding: 7px;
+     width: 80%;
+     background-color: #80ddc7;
+     border: 3px solid #fff;
+     color:#fff;
+    }
+    .item.item-input {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+     border: medium none;
+     display: inherit;
+     padding: 0;
+     text-align: center;
+    }
+    #name_input .input_name input {
+     background-color: #80ddc7;
+     border: 3px solid #fff;
+     display: inline;
+     width: 80%;
+     margin-top: 20px;
+    }
+    .back-button{
+     float:left;    
+     padding: 10px;
+     margin-top: 100px;
+     width:100%;
+    }   
+   .button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+    }
+    .left-button{
+      float:left;    
+      padding: 10px;      
+      width:50%;
+    }
+    .right-button{
+      float:right;    
+      padding: 10px;      
+      width:50%;
+    }
+</style>

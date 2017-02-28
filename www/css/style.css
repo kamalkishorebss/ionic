@@ -1,0 +1,74 @@
+/* Empty. Add your own CSS if you like */
+
+.pane{
+background:url('/img/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.content {
+    color: white;
+    font-family: "Comic Sans MS";
+    font-size: 33px;
+    margin-top: 30px;
+    text-align: center;
+}
+.form-body{
+	padding: 10px;
+	width:100%;
+}
+/*.upper-block{
+	
+	padding: 10px;
+}*/
+.lower-block{	
+    float: left;
+    padding: 0;
+    width: 100%;	
+
+}
+.lower-div{
+	margin-top: 50px;
+}
+.left-page {
+	
+    width: 50%;
+    float: left;
+    padding: 10px;
+    background:transparent;
+}
+.right-page {
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
+.action{
+	float:right;	
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.list{
+	background:transparent;
+}
+
+.item-input-inset{
+     background:transparent;	
+}
+.business-image img {
+
+	margin-top: 25px;
+    border-radius: 50%;
+
+}
+.item-logo{
+	margin-top: 25px;	
+}
+
+.list .item label {
+    background: #80d0bc none repeat scroll 0 0;
+    border: 3px solid white;
+}
+.item-body{
+    background:transparent; 
+}
+

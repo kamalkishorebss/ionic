@@ -1,0 +1,72 @@
+<ion-modal-view class="modal-view">
+      <ion-content class="ion-content">
+      <!-- <button class = "button icon icon-left ion-ios-close-outline"
+         ng-click = "closeModal()">Close Modal</button> -->  
+        <div class="popup">                
+           <p class="text">Are you sure<br>you want to <br>erase Business? <br>Once you erased <br> you won't be <br>able to <br>recover its <br> information ever  </p>           
+	          <div class="pop-buttons">	
+	           <div class="left-page">            
+                <button class="button button-block" ng-click="businessBack()">
+				  Back
+				 </button>	            
+	           </div>
+               <div class="right-page">            
+                <button class="button button-block" ng-click="openPopover($event)">
+				   Confirm
+				 </button>	            
+	           </div>
+	          </div>
+	     </div>     
+      </ion-content>
+   </ion-modal-view>
+
+<style type="text/css">	    
+	.text{	
+		color:white;	
+		font-size: 30px;	
+		text-align: center;
+		line-height: 32px;
+		font-style: "Arial";	
+    }
+	.popup {
+    background-color: #3e4443;
+    border: 3px solid #ffffff;
+    float: left;
+    margin-left: 18px;
+    margin-top: 84px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+}
+    .pop-buttons{
+     width:100%;
+     float:left;
+     /*padding:10px;*/
+    }
+    .button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+
+  .left-page{
+     width:50%;
+     float:left;
+     padding:10px;
+   }
+  .right-page{
+	width:50%;
+    float:right;	
+    padding:10px;
+   }
+   .modal-view{
+   	background:transparent; 
+   }
+   .ion-content{
+   	background:transparent; 
+   }
+   
+</style>

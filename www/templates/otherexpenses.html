@@ -1,0 +1,91 @@
+<ion-modal-view id="Other_expense">
+
+      <ion-content class="other_expense">         
+           Other Expense
+           <form  name="ionic" class="form-class" novalidate form-manager>
+              <div class="list list-inset" id="doller_input">                
+              <label class="item item-input">
+                  <input ng-model="ammount" name="ammount" type="text" placeholder="name" required>
+              </label>
+                </div>
+                <div class="list list-inset" id="calender_input">
+                  <label class="item item-input">
+                      
+                      <md-datepicker name="to" ng-model="myDate1" md-placeholder="Select-date">    
+                      </md-datepicker>   
+                      <!-- <input ng-model="name" name="fieldName" type="date" placeholder="20/03/2016"> -->
+                  </label>
+                </div>
+                <div class="list list-inset" id="description_input">
+                  <label class="item item-input">
+                      <input ng-model="description" name="description" type="text" placeholder="Description">
+                  </label>
+                </div>
+                <div class="list list-inset" id="form_button">              
+                    <button class="button button-block" ng-click="closeModalo(  
+                        ammount, description, myDate1, titleExp)" data-tap-disabled="true">
+                        Register Expenses
+                    </button>              
+                </div>
+           </form>
+      </ion-content>
+   </ion-modal-view>
+
+<style type="text/css">
+  
+    #Other_expense{
+      margin-top: 80px;
+      background-color: #59686D;
+      border-radius: 18px;
+    }
+    .other_expense{
+      color:white;  
+      text-align: center;
+      font-family: "Comic Sans MS";
+      margin-top: 24px;
+      font-size: 34px;
+      padding: 18px;
+    }
+    .button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+
+
+   .item-input input{
+    border :2px solid #fff;
+    background-color: #9BA4A9;
+    
+   }
+   .modal {
+    background-color: #fff;
+    display: block;
+    margin-left: 20px;    
+    min-height: 66%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    z-index: 10;
+    border:3px solid #fff;
+  }
+  .item-input {
+    -moz-box-align: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    background-color:#9BA4A9; 
+    border :2px solid #fff;
+  }
+  .item-input > md-datepicker{
+    background-color:#9BA4A9; 
+  }
+  
+   
+</style>

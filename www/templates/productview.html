@@ -1,0 +1,121 @@
+<ion-view view-title="Product view" class="pane">
+  <ion-content class="content" ng-controller="registersales">
+     <p>View Product</p>
+
+     <div class="btn-botton">    
+		    <div class="left-div">
+		      <button class="button icon ion-edit">
+              </button>
+		    </div>
+		    <div class="right-div">
+			    <button class="button ion-android-share-alt">
+				   
+				</button>
+		    </div>    
+    </div>
+
+    <div class="product_image">
+     <img src="/img/img-2.jpg" class="img-circle" alt="img-2" width="200" height="200">
+   </div>
+
+   <div class="product_info">
+   	<h4>{{singleProduct.name}}</h4>
+   	<h4>{{singleProduct.sale_price}}</h4>
+   </div>
+   <div class="text-section">
+	   <textarea name="description" ng-model="description" cols="37" rows="5" placeholder="Product description.." >
+	   </textarea>
+   </div>
+   <div class="btn-botton">    
+		    <div class="left-div">
+		      <button class="button button-block">
+				   Back
+		 	  </button>
+		    </div>
+		    <div class="right-div">
+			    <button class="button button-block">
+				   Buy
+				</button>
+		    </div>    
+    </div>
+  </ion-content>
+</ion-view>
+
+<style type="text/css">	
+	p{	
+	font-size: 34px; 
+	font-family: "Comic Sans MS";	
+  text-align: center;
+	padding: 20px;
+  } 
+  h4{
+    color:#fff;
+  }
+    .btn-botton{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-top:10px; 
+    }
+    .right-div{
+    float: right;
+    width: 50%;
+    padding: 10px;
+	}
+	.left-div{
+    float: left;
+    width: 50%;
+    padding: 10px;
+	}
+	.product_image img{
+		margin-top:10px; 
+		border-radius: 50%; 
+	}
+	.product_image{
+		text-align: center;
+
+	}
+	.btn-botton{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-top:10px; 
+    }
+    .right-div{
+    float: right;
+    width: 50%;
+    padding: 10px;
+	}
+
+	.left-div{
+    float: left;
+    width: 50%;
+    padding: 10px;
+	}
+	.text-section{
+	float:left;
+	width:100%;
+	padding: 10px;
+   }
+   .text-section>textarea{
+   	background: #66c6ad  ;
+    border: 2px solid #e0f3ee;   	
+   }
+
+  .button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+   .icon {
+    background-color:#f47d3d;
+   }
+   .ion-android-share-alt{
+    background-color:#f47d3d;
+
+   }
+
+</style>

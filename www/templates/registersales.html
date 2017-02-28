@@ -1,0 +1,134 @@
+<ion-view view-title="Register Sales" class="pane">
+ <ion-content class="content"> 
+ <p>Register Sales</p>
+     <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+	    <div class="tabs">
+	      <a class="tab-item active" href="#/app/registersales">	        
+	        Registser Sales
+	      </a>
+	      <a class="tab-item" href="#/app/selectedproduct">
+	       Selected Product 	        
+	      </a>
+	      <a class="tab-item" href="#/app/manualsale">	        
+	        Manual Sale	        
+	      </a>	      
+	    </div>	    
+
+	 </div>
+	      
+	 <div class="scanners">
+	       <div class="left-div">
+	       <ion-radio ng-model="test.val" ng-value="s1">Integrated cemera</ion-radio>
+	       </div>
+
+	      <div class="right-div">
+	      <ion-radio ng-model="test.val" ng-value="s1">External scanner</ion-radio>
+	      </div>
+	 </div>  
+   
+     <div class="Sales-image">
+	     <img src="/img/img-2.jpg" class="img-Sales"  width="380" height="400">
+	 </div>
+
+    <div class="range-filter">    
+		    <div class="left-side-div">
+		       <span style="text-align:left;"><h4>Stapler</h4></span>
+		       <div class="item range">
+		          <i class="icon ion-ios7-sunny-outline"></i>
+		          <input type="range" name="volume" min="0" max="10" value="{{rangeValue}}" ng-model="rangeValue">
+		          <i class="icon ion-ios7-sunny-outline"></i>
+		       </div>
+		    </div>
+		    <div class="right-side-div">
+		    <span><h4>Quantity</h4></span>
+			    <div class="quantity" name="quantity">
+			    <span style="padding: 10px;">X</span>
+			    {{rangeValue}}</div>
+		    </div>
+    
+    </div>
+
+    <div class="btn-botton">    
+		    <div class="left-div">
+		      <button class="button button-block">
+				   Back
+		 	  </button>
+		    </div>
+		    <div class="right-div">
+			    <button class="button button-block">
+				   View Tickets
+				</button>
+		    </div>    
+    </div>
+
+
+ </ion-content>
+ </ion-view>
+
+<style type="text/css">
+	p{	
+	font-size: 34px; 
+	font-family: "Comic Sans MS";
+	margin: 26px 0 10px
+    } 
+    h4{
+      color:#fff;
+    }
+    
+    .scanners{
+    margin-top:60px;
+   	float: left;
+   	width:100%;
+   }
+    .right-div{
+    float: right;
+    width: 50%;
+    padding: 10px;
+	}
+
+	.left-div{
+    float: left;
+    width: 50%;
+    padding: 10px;
+	}
+	.range-filter{
+    float: left;
+    width: 100%;
+    padding: 10px;
+     
+    }
+	.right-side-div{
+    float: right;
+    width: 30%;
+    padding: 10px;
+	}
+
+	.left-side-div{
+    float: left;
+    width: 70%;
+    padding: 10px;
+	}
+    
+    .btn-botton{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-top:10px; 
+    }
+
+    .Sales-image >img {
+    padding: 20px;
+    }
+   .button-block{
+   	background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+</style>
+
+
+
+

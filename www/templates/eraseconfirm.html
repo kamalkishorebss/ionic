@@ -1,0 +1,56 @@
+<ion-popover-view class="popover-view">
+      <ion-content class="ion-content">
+      <!-- <button class = "button icon icon-left ion-ios-close-outline"
+         ng-click = "closeModal()">Close Modal</button> -->  
+        <div class="popupover">                
+           <p class="text">Business <br>has been<br>Successfully <br>erased.</p>           
+	           <div class="action-button">	            
+                <button class="button button-block" ng-click="closePopover()">
+				   Confirm
+				 </button>	            
+	          </div>
+	     </div>     
+      </ion-content>
+   </ion-popover-view>
+
+<style type="text/css">	    
+	.text{	
+		color:white;	
+		font-size: 28px;	
+		text-align: center;
+		line-height: 32px;
+		font-style: "Arial";	
+    }
+
+	.popupover{
+	    background-color: #3e4443;
+	    border: 3px solid #ffffff;
+	    float: left;
+	   /* margin-left: 18px;
+	    margin-top: 84px;*/
+	   /* padding: 10px;*/
+	    text-align: center;
+	    width: 100%;
+    }
+    .action-button{
+	     width:100%;
+	     float:left;
+	     padding:10px;
+    }
+    .button-block{
+	    background-color: #f47d3d;
+	    border: 3px solid #ffffff;
+	    clear: both;
+	    display: block;
+	    color:#fff;
+	    font-size: 20px;
+	    padding:10px;
+    }  
+   .popover-view{
+	   	background:transparent; 
+   }
+   .ion-content{
+	   	background:transparent; 
+   }
+   
+</style>

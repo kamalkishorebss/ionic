@@ -1,0 +1,214 @@
+<ion-view view-title="Register Incomes" class="pane">
+  <ion-content class="content">
+     <p>Register Incomes</p>
+      <div class="first-row">
+
+		    <div class="left-page">			   
+           <div class="item item-body" ng-click="openModale('Donation')">
+		        <img class="full-image" src="/img/hand.png">		       
+		      </div>	
+           <h4>Donation</h4>			    
+        </div>
+
+    		<div class="mid-page">	
+    			  <div class="item item-body" ng-click="openModale('Shift')">
+    		      <img class="full-image" src="/img/elephant.png">    		      
+    		   </div>
+           <h4>Shaving Shift</h4> 
+    		</div>
+
+    		<div class="right-page">	
+    			  <div class="item item-body" ng-click="openModale('Consignment')">
+    		      <img class="full-image" src="/img/dollar.png">    		      
+    		   </div>
+           <h4>Consignment</h4>
+    		</div>
+
+	    </div>
+
+    	<div class="first-row">
+    		<div class="left-page" ng-click="openModale('Sold')">			   
+               <div class="item item-body">
+    		         <img class="full-image" src="/img/bag-dollar.png">    		     
+    		       </div>	
+              <h4>I Sold Something</h4>			    
+        </div>
+
+       <div class="mid-page">	
+    			  <div class="item item-body" ng-click="openModale('Credit')">
+    		      <img class="full-image" src="/img/dollar-hand.png">    		      
+    		   </div>
+           <h4>I Recieved a Credit</h4>
+    	 </div>
+
+    	 <div class="right-page">	
+    			  <div class="item item-body" ng-click="openModale('Endeavor')">
+    		      <img class="full-image" src="/img/dollar-hand-2.png">    		      
+    		   </div>
+            <h4>Endeavor</h4>
+    	 </div>        		
+    	</div>
+	<div class="first-row">
+	  <div class="full-page">			   
+           <div class="item item-body" ng-click="openModale('Incomes')">
+		         <img class="full-image" src="/img/dollar-hand-2.png">		         
+		       </div>
+           <h4>Other Incomes</h4>				    
+    </div>	
+	</div>
+	<div class="back-button">    
+		    <div class="btn-button">
+		      <button class="button button-block">
+				   Back
+		 	  </button>
+		    </div>		     
+  </div>
+    
+  </ion-content>
+</ion-view>
+
+<script id="incomexpenses.html" type="text/ng-template">
+    <ion-modal-view id="Income_expense">
+
+      <ion-content class="income_expense">         
+           Incomes Expenses
+           <form  name="ionic" class="form-class" novalidate form-manager>
+              <div class="list list-inset" id="doller_input">                
+              <label class="item item-input">
+                  <input ng-model="ammount" name="ammount" type="text" placeholder="name" required>
+              </label>
+                </div>
+                <div class="list list-inset" id="calender_input">
+                  <label class="item item-input">                      
+                      <md-datepicker name="to" ng-model="myDate1" md-placeholder="Select-date">    
+                      </md-datepicker>                      
+                  </label>
+                </div>
+                <div class="list list-inset" id="description_input">
+                  <label class="item item-input">
+                      <input ng-model="description" name="description" type="text" placeholder="Description">
+                  </label>
+                </div>
+                <div class="list list-inset" id="form_button">              
+                    <button class="button button-block" ng-click="closeModale(  
+                        ammount, description, myDate1, titleExp)" data-tap-disabled="true">
+                        Register Incomes
+                    </button>              
+                </div>
+           </form>
+      </ion-content>
+   </ion-modal-view>
+</script>
+
+
+<style type="text/css">
+    h4{
+    	color:white;
+    }
+
+
+	p{	
+	font-size: 34px; 
+	font-family: "Comic Sans MS";
+	margin: 20px 0 10px;
+	padding: 20px;
+  } 
+  .first-row{
+    float:left;
+    width: 100%;
+    padding: 0 15px; 
+  } 
+  .left-page{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+	}
+	.mid-page{
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+	}
+    .right-page{
+    float: right;
+    width: 33.33%;
+    padding: 15px;
+	}
+    .full-page{
+    float: left;
+    width: 33.33%;
+    padding: 10px;	
+    }
+	.back-button{
+   	float:left;   	
+   	padding: 10px;
+   } 
+   .button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+   .item-body{
+    border-radius: 5px;
+    background-color: #652d86;
+    border:3px solid #fff;
+    padding: 5px;
+   }
+
+   /*model css*/
+    #Income_expense{
+      margin-top: 80px;
+      background-color: #59686D;
+      border-radius: 18px;
+    }
+    .income_expense{
+      color:white;  
+      text-align: center;
+      font-family: "Comic Sans MS";
+      margin-top: 24px;
+      font-size: 34px;
+      padding: 18px;
+    }
+    .button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+
+
+   .item-input input{
+    border :2px solid #fff;
+    background-color: #9BA4A9;
+    
+   }
+   .modal {
+    background-color: #fff;
+    display: block;
+    margin-left: 20px;    
+    min-height: 66%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    z-index: 10;
+    border:3px solid #fff;
+  }
+  .item-input {
+    -moz-box-align: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    background-color:#9BA4A9; 
+    border :2px solid #fff;
+  }
+  .item-input > md-datepicker{
+    background-color:#9BA4A9; 
+  }
+</style>

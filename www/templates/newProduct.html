@@ -1,0 +1,152 @@
+<ion-view view-title="My Product" class="pane">
+  <ion-content class="content">
+  <p>New Product</p>
+  <from name="myfrom">
+    <div class="first-row">
+		<div class="left-div">
+		  <div class="item item-avatar" style="background:transparent;">
+		  <img src="/img/img-2.jpg">      
+		  </div>
+		   <input type="text" placeholder="Product Code" name="code" ng-model="product.code">
+
+		</div>
+		<div class="right-div">
+		<button class="button button-block">
+		   Scan Bar Code
+ 		</button>
+ 		  <label class="item item-input">
+            <input type="text" placeholder="Product Cost" name="sale_price" ng-model="product.price">
+          </label>
+    </div>
+
+    <div class="second-row">
+        <input type="text" placeholder="Product Name" name="product_name" ng-model="product.name">        
+	    <select name=catagory ng-model="Catagory">
+	         <option value ="">Define a Catagory</option>
+	         <option>Option 2</option>
+	         <option>Option 3</option>
+	     </select>
+	     <textarea name="description" ng-model="product.description" cols="20" rows="5" placeholder="Product description.." ="">
+
+		 </textarea>
+    </div>
+   </form>
+    <div class="third-row">
+         <button class="button button-block">
+		   Color or Size Detail
+ 	  </button>
+    </div>
+    <div class="fourth-row">
+    
+    <div class="left-div">
+      <button class="button button-block" ng-click="openModal()">
+		   Erase Product
+ 	  </button>
+    </div>
+
+    <div class="right-div">
+	    <button class="button button-block" ng-click="addProduct()">
+		   Add Product
+		</button>
+    </div>
+    
+    </div>
+    
+  </ion-content>
+</ion-view>
+
+<style type="text/css">
+p{  
+    font-size: 34px; 
+    font-family: "Comic Sans MS";    
+    padding: 20px;
+    text-align: center;
+    } 
+.first-row{
+	width:100%;
+	float:left;
+    /*padding: 10px;*/
+}
+.second-row{
+	width:100%;
+	float:left;
+    padding: 10px;
+}
+.third-row{
+	width:100%;
+	float:left;
+}
+.fourth-row{
+	width:100%;
+	float:left;
+    margin-bottom:20px;
+    padding-bottom: 10px; 
+}
+.left-div{
+  width:50%;
+  float:left;
+  padding:5px;
+}
+.right-div{
+	width:50%;
+    float:right;	
+    padding:5px;
+}
+.right-div > input {
+    float: left;
+    width: 100%;
+}
+.left-div > input {
+    float: left;
+    width: 100%;
+}
+
+.second-row > input {
+    float: left;
+    padding: 5px;
+    width: 100%;
+    padding:10px;
+    background: #66c6ad;
+    border: 2px solid #e0f3ee;  
+}
+
+.second-row > select {
+    float: left;
+    padding:5px;
+    width: 100%;
+    margin-top:10px;
+    background: #66c6ad;
+    border: 2px solid #e0f3ee;  
+}
+.second-row > textarea {
+    float: left;
+    padding:5px;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    background: #66c6ad;
+    border: 2px solid #e0f3ee;  
+}
+.third-row button {
+    display: inline;
+    width: auto;
+}
+
+.button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+   .left-div input{
+    background: #66c6ad;
+    border: 2px solid #e0f3ee;
+
+   }
+   .right-div input{
+    background: #66c6ad;
+    border: 2px solid #e0f3ee;
+   }
+</style>

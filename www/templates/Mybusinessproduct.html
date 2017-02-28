@@ -1,0 +1,108 @@
+<ion-view view-title="Product view" class="pane">
+  <ion-content class="content">
+     <p>My Business Product</p>
+	 <div class="new-button">    
+	    <div class="btn-button">
+	      <button class="button button-small" ng-click="addNewproduct()">
+	      Add New Product
+			   
+	 	  </button>
+	    </div>
+	 </div>
+     <div class="bar bar-header bar-positive">
+        <button class="button icon ion-navicon" ng-click="previous()"></button>
+           <h1 class="title" id="home"> {{data[0].name}}</h1>
+       <button class="button icon ion-home" ng-click="next()"></button>
+      </div>
+     <h4 style="text-align: right; color:white; margin-right: 10px;">Quantity</h4> 
+     <div class="list" ng-repeat="product in data1" ng-click="productBy_id(product.id)" data-tap-disabled="true">
+
+        <div class="left-image">           	
+		      <img src="/img/img-2.jpg" width="50" height="50" class="img-circle">	    			    
+        </div>
+
+		<div class="mid-page">
+			<h4 style="text-align:left;">{{product.name}}</h4>
+			<h4 style="text-align:right;""> Price:$ {{product.sale_price}}</h4>			  
+		</div>
+
+		<div class="right-page">	
+		  <span>23</span>
+		</div>
+     </div>    
+    <div class="back-button">    
+	    <div class="btn-button">
+	      <button class="button button-block" ng-click="businessBack()">
+	        Back
+			   
+	 	  </button>
+	    </div>		     
+    </div>
+  </ion-content>
+</ion-view>   
+<style type="text/css">
+	p{	
+	font-size: 30px; 
+	font-family: "Comic Sans MS";
+	margin-top: 20px;	
+	
+    } 
+    h4{
+    	color:white;    	
+    }
+    
+    .new-button{
+   	float:left;   	
+   	padding: 10px;
+   	width:100%;
+   } 
+   .button-small{
+   	background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    font-size: 18px;
+    color:#fff;
+    margin-left:170px; 
+   }
+   .btn-button {
+    float: right;
+   }
+   .list{
+   	float:left;
+   	width:100%;
+   	padding:10px;
+   	background-color:#66c6ad; 
+   }
+    .left-image{
+    float: left;
+    width: 20%;
+    
+	}
+	.mid-page{
+    float: left;
+    width: 60%;
+   
+    
+	}
+    .right-page{
+    float: right;
+    width: 20%;
+    
+	}
+	.left-image img{
+		border-radius: 50%;
+	}
+	.back-button{
+   	float:left;   	
+   	padding: 10px;
+   } 
+   .button-block{
+   	background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+   }
+</style>

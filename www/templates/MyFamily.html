@@ -1,0 +1,210 @@
+<ion-view view-title="My Family" class="pane">
+  <ion-content class="content family">
+     My Work Team
+    <div class="member_name">      
+       <div class="member-list">
+         <h4>{{member_info.name}}</h4>
+         <h4>{{member_info.relation}}</h4>
+         
+       </div>
+    </div>  
+
+	  <div class="second-row">
+		  <div class="left-div">
+        <div class="item-image">		   
+		      <img class="img-circle" src="/img/img-2.jpg" width="50" height="50">		      
+		    </div>           				    
+      </div>     
+		  <div class="right-div">			  		      
+		      <h4>Last Total Income: $ 830.00</h4>
+		      <h4>Last Total Expense: $ 270.00</h4>	     
+		  </div>
+	  </div>
+
+	<div class="third-row">
+	      <h3>Control access</h3>
+	      <div class="div-left"> <h4>Add or Remove Member</h4></div>
+	      <div class="div-right">
+            <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+             </label>
+         </div>
+	      <div class="div-left"> <h4>Watch My Information</h4></div>
+	      <div class="div-right">
+             <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+             </label>
+        </div>
+	      <div class="div-left"> <h4>Register Expenses</h4></div>
+	      <div class="div-right">
+           <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+            </label> 
+        </div>
+	      <div class="div-left"> <h4>Register Sales</h4></div>
+	      <div class="div-right">
+            <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+            </label> 
+        </div>
+        <div class="div-left"> <h4>Supply Business</h4></div>
+        <div class="div-right">
+            <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+            </label>
+        </div>
+        <div class="div-left"> <h4>Product View</h4></div>
+        <div class="div-right">
+            <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+            </label>
+        </div>
+        <div class="div-left"> <h4>Tipping</h4></div>
+        <div class="div-right">
+             <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+             </label>
+        </div>
+        <div class="div-left"> <h4>Tickect Printer</h4></div>
+        <div class="div-right">
+             <label class="toggle toggle-assertive">
+                 <input type="checkbox">
+                 <div class="track">
+                     <div class="handle"></div>
+                 </div>
+             </label>
+        </div>
+	</div>
+
+	<div class="btn-botton">    
+        <div class="left-button">
+          <button class="button button-block" ng-click="deleteMember(member_info.id)">
+           Delete Member
+        </button>
+        </div>
+        <div class="right-button">
+          <button class="button button-block" ng-click="confirmMember()">
+           Confirm
+        </button>
+        </div>    
+  </div>
+
+  </ion-content>
+</ion-view>  	
+<style type="text/css">
+    .content.family{
+      color: white;
+      font-family: "Comic Sans MS";
+      font-size: 33px;
+      margin-top: 30px;
+      text-align: center;
+      top: 32px;
+      padding:10px;
+    }  
+
+    .member-list h4{
+       color:white;
+       text-align: center;  
+    }   
+
+    .member_name {
+     float: left;
+     margin-top: 30px;
+     padding: 10px;
+     width: 100%;
+    }
+
+    h3{
+       text-decoration:underline;
+       color:white;
+       font-family: "Comic Sans MS";
+    }
+
+    h4{
+       color:white;
+       text-align: left;  
+    }
+
+    .second-row{
+      float:left;
+      width: 100%;
+      background-color: #66c6ad;
+    }
+    .second-row .left-div{
+     float: left;
+     width: 20%;    
+    }
+    .second-row .right-div{
+     float: left;
+     width: 80%;    
+    } 
+
+    .third-row{
+      float:left;
+      width: 100%;
+      padding:10px; 
+    }
+    .item-image {
+     float: left;
+     height: 50px;     
+     width: 50px;
+     margin:10px;
+     text-align: center;
+    }
+	  .img-circle{
+	  	border-radius:50%;
+	  }
+	 
+	.div-left{
+    float: left;
+    width: 80%;    
+	}
+	.div-right{
+    float: left;
+    width: 20%;    
+	}
+	.button-block{
+    background-color: #f47d3d;
+    border: 3px solid #ffffff;
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size: 18px;
+  }
+  .btn-botton{
+    float: left;
+    width: 100%; 
+    margin-top: 30px;    
+  }
+  .right-button{
+   float: right;
+   width: 34%;
+   padding: 10px;    
+  }
+  .left-button{
+    float: left;
+    width: 66%;
+    padding: 10px;
+  }
+</style>
